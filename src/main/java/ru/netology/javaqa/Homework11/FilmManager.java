@@ -1,3 +1,5 @@
+package ru.netology.javaqa.Homework11;
+
 public class FilmManager {
     private String[] films = new String[0];
     private int limit;
@@ -35,10 +37,12 @@ public class FilmManager {
         } else {
             resultLength = limit;
         }
+
         String[] tmp = new String[resultLength];
         for (int i = 0; i < tmp.length; i++) {
             tmp[i] = films[films.length - 1 - i];
         }
+
         return tmp;
     }
 }

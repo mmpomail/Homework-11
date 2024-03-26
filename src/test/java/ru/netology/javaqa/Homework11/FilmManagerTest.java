@@ -1,12 +1,12 @@
+package ru.netology.javaqa.Homework11;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class FilmManagerTest {
 
     @Test
-    public void newFilmTest()
-
-    {
+    public void newFilmTest() {
 
         FilmManager manager = new FilmManager();
 
@@ -17,10 +17,8 @@ public class FilmManagerTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-   @Test
-    public void addFilm()
-
-    {
+    @Test
+    public void addFilm() {
 
         FilmManager manager = new FilmManager();
 
@@ -34,9 +32,7 @@ public class FilmManagerTest {
     }
 
     @Test
-    public void addFilms()
-
-    {
+    public void addFilms() {
 
         FilmManager manager = new FilmManager();
 
@@ -46,7 +42,7 @@ public class FilmManagerTest {
         manager.addFilm("Film 4");
         manager.addFilm("Film 5");
 
-        String[] expected = {"Film 1", "Film 2", "Film 3","Film 4", "Film 5"};
+        String[] expected = {"Film 1", "Film 2", "Film 3", "Film 4", "Film 5"};
 
         String[] actual = manager.findAll();
 
@@ -54,9 +50,7 @@ public class FilmManagerTest {
     }
 
     @Test
-    public void addFilmsNewLimit()
-
-    {
+    public void addFilmsNewLimit() {
 
         FilmManager manager = new FilmManager(7);
 
@@ -68,7 +62,7 @@ public class FilmManagerTest {
         manager.addFilm("Film 6");
         manager.addFilm("Film 7");
 
-        String[] expected = {"Film 1", "Film 2", "Film 3","Film 4", "Film 5", "Film 6", "Film 7"};
+        String[] expected = {"Film 1", "Film 2", "Film 3", "Film 4", "Film 5", "Film 6", "Film 7"};
 
         String[] actual = manager.findAll();
 
@@ -76,9 +70,7 @@ public class FilmManagerTest {
     }
 
     @Test
-    public void findLastFilm()
-
-    {
+    public void findLastFilm() {
 
         FilmManager manager = new FilmManager();
 
@@ -96,9 +88,7 @@ public class FilmManagerTest {
     }
 
     @Test
-    public void findLastFilmLowerLimit()
-
-    {
+    public void findLastFilmLowerLimit() {
 
         FilmManager manager = new FilmManager();
 
